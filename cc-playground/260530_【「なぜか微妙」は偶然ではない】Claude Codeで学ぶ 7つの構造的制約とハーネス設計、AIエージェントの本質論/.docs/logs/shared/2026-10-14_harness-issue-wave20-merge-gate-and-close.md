@@ -25,7 +25,7 @@ head: 8dc4f43 (段5 = PR #623 の merge 後の origin/main。初版は 0037988)
 | 同じ期間に波の外で起票 | #608 #610 #612 #613 #622 | 2026-10-14 |
 | open issue | 着手時 35 → 22 (`gh issue list --state open`。22 件には波の外の #622 を含む) | 2026-10-14 22:5x |
 | post-merge `run-all` | `8dc4f43` (14 本の merge 後) を clone で full run: **95 file(s) passed, 0 failed**、rc=0、676s。その前に `52a5fcf` (13 本の後) でも 95/0、merge 前に GO の鎖を 2 回 (6 本の鎖 94/0、8 本の鎖 95/0) | 2026-10-14 23:08 |
-| 段6 | worktree 14 本を `gtr rm` (殻 dir 0)、Keychain item 14 件を回収 (台帳へ `reclaimed` 14 件)。権威スキャン: 孤児 0 / 帰属不能 0 / 判定不能 1 (`~/.claude-verify-111` = 既知の置き場の外) | 2026-10-14 |
+| 段6 | worktree 15 本を `gtr rm` (殻 dir 0)、Keychain item 15 件を回収 (台帳へ `reclaimed` 15 件)。内訳は 14 本 (12 レーン + issue-608 + 回収レーン M、20:4x) + 段5 のレーン N (PR #623 の merge 後、23:1x)。権威スキャン (最後): item 3 / 孤児 0 / 帰属不能 0 / 判定不能 1 (`~/.claude-verify-111` = 既知の置き場の外) | 2026-10-14 |
 
 ## 2. レーン配分と diff 規模 (`gh pr view --json additions,deletions,changedFiles`)
 
